@@ -1,5 +1,6 @@
 namespace LeetCodeProblems;
 
+//https://leetcode.com/problems/contains-duplicate
 public class ContainsDuplicate
 {
     public bool Solution(int[] nums)

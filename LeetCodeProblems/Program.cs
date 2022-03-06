@@ -3,6 +3,9 @@
 using LeetCodeProblems;
 
 Console.WriteLine("Hello, World!");
-ContainsDuplicate contains = new();
-int[] nums = new[]{1, 2, 3, 4};
-Console.WriteLine(contains.Solution(nums));
+MergeSortedArray mergeSortedArray = new();
+int[] nums1 = new[] {-1,-1,0,0,0,0};
+int[] nums2 = new[] {-1, 0};
+int m = 4;
+int n = 2;
+mergeSortedArray.Solution(nums1, m, nums2, n);
