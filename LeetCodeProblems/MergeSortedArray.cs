@@ -15,7 +15,6 @@ public class MergeSortedArray
             Array.Copy(nums2, nums1, n);
             return;
         }
-
         if (n == 0) return;
 
         while (finalCount < m + n)

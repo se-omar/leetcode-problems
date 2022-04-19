@@ -14,7 +14,7 @@ public class MaximumSubarray
             if (currentSum < num) currentSum = num;
             if (maxSum < currentSum) maxSum = currentSum;
         }
-
+int[] arr = new int[2];
         return maxSum;
     }
 }
