@@ -4,23 +4,14 @@ public class FirstUniqueChar
 {
     public int Solution(string s)
     {
-        List<char> bannedChars = new List<char>();
+        int[] occurrences = new int[26];
+
+        for (int i = 0; i < s.Length; i++) occurrences[s[i] - 'a']++;
+        
+
         for (int i = 0; i < s.Length; i++)
-        {
-            bool found = false;
-            for (int j = i + 1; j < s.Length; j++)
-            {
-                if (s[i] == s[j])
-                {
-                    bannedChars.Add(s[i]);
-                    found = true;
-                    break;
-                }
-            }
-
-            if (found == false && !bannedChars.Contains(s[i])) return i;
-        }
-
+            if (occurrences[s[i] - 'a'] == 1) return i;
+       
         return -1;
     }
 }
